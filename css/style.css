@@ -1,0 +1,144 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	background-color: rgb(221, 240, 241);
+	background-image: url("vote4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(51, 44, 44);
+	height: 14vh;
+	width: 100%;
+}
+
+nav .logo {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+nav a {
+	text-decoration: none !important;
+	color: #ffffff;
+}
+
+nav .nav-links {
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+}
+nav .nav-links .a-links{
+	display: flex;
+	width: 20%;
+	justify-content: space-between;
+}
+
+.nav-itmes:hover {
+	color: rgb(180, 135, 135);
+}
+
+nav .nav-links li {
+	list-style: none;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+}
+
+.burger div {
+	height: 4px;
+	width: 30px;
+	margin: 6px;
+	background-color: #ffffff;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		overflow: hidden;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.active .line1 {
+		transform: rotate(-45deg) translate(-8px, 6px);
+	}
+	.active .line2 {
+		opacity: 0;
+	}
+	.active .line3 {
+		transform: rotate(46deg) translate(-8px, -6px);
+	}
+	nav {
+		padding: 8px 10px;
+	}
+	nav .nav-links {
+		width: 45vh;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		top: 13vh;
+		text-align: right;
+		background-color: rgb(51, 44, 44);
+		height: 70vh;
+		padding: 30px 25px;
+		transform: translateX(110%);
+		transition: transform 0.5s ease-in;
+	}
+
+	nav .nav-links li {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	nav .logo {
+		font-size: 5px;
+	}
+}
+
+@media (max-width: 560px) {
+	nav .nav-links {
+		height: 60vh;
+		z-index: 9999;
+	}
+}
+
+.nav-links.active {
+	transform: translateX(0%);
+}
+
+.footer{
+	background-color: #333;
+	color: #ffffff;
+	height: 10vh;
+	text-align: center;	
+}
+
+.party{
+	text-decoration: underline;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.footer .footer-item{
+	font-size: 1.2rem;
+	padding-top: 20px;
+}

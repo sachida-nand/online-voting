@@ -1,0 +1,116 @@
+<?php include "include/links.php";?>
+<?php include "include/header.php";?>
+
+<div class="main-div">
+    <div class="container pt-5">
+        <div class="body-cont">
+            <div class="reg-header">
+                <h1>Register For New Voter Here</h1>
+            </div>
+            <hr>
+            <form action="register.php" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-12">
+                        <label for="Name">Name</label>
+                    </div>
+                    <div class="col-lg-10 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="Name" placeholder="Enter Your Name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <label for="fName">Father/Mother Name</label>
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="fName"
+                                placeholder="Enter Your Father/Mother Name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <label for="dob">Date Of Birth(DOB)</label>
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="dob" placeholder="Enter DOB">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <label for="Phone">Phone</label>
+
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="Phone" placeholder="Enter Your Phone Number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <label for="email">Email (optional)</label>
+
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <label for="address">Address</label>
+
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="address" placeholder="Enter Your Address">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <label for="vId">Voter ID</label>
+
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="vId"
+                                placeholder="Enter Any Number for new Voter">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <label for="img">Photo</label>
+
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="form-group">
+                            <input type="file" class="form-control" id="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info btn-block p-2">Register</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php include "include/footer.php"; ?>

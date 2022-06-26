@@ -1,0 +1,25 @@
+:root{
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+    --radius:5px;
+}
+
+.Login-cont{
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    background-color: aliceblue;
+    padding: 20px 35px;
+}
+
+@media (min-width:1024px){
+    .Login-cont{
+        /* width: 60%;
+        position: relative;
+        left: 20%;
+        top: 20px; */
+        margin: 20px 20%;
+    }
+}
+
+.header{
+    text-align: center;
+}
